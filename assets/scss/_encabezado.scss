@@ -1,0 +1,77 @@
+.encabezado{
+    grid-area: header;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  
+    
+}
+
+.navbar{
+    width: 100%;
+    height: min-content;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    background-color: $color1;
+    ul{
+        margin-top: 20px;
+        text-align: center;
+        
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: 5px;
+            padding: 10px;
+
+            a{
+                text-decoration: none;
+                color: $color3;
+                font-size: 1.2rem;
+                position: relative;
+            }
+        }
+    }
+    link{
+        text-decoration: none;
+        color: inherit;
+        padding: 10px;
+        font-family: $fuente1;
+        font-size: 1.1rem;
+        position: relative;
+        &:after{
+            width: 0;
+            height: 4px;
+            background-color: $color1;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transition: all .5s;
+            will-change: width;
+
+        }
+
+    }
+    .logo{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        font-weight: bold;
+        color: $color3;
+        font-size: 1.5em;
+        text-decoration: none;
+        font-family: $fuente1;
+    
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .encabezado{
+        margin-bottom: 0;
+    }
+}
+
